@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSThermostatViewController">
+            <connections>
+                <outlet property="humidityLabel" destination="LLQ-Hk-WQa" id="cew-7A-FKd"/>
+                <outlet property="hvacModeButton" destination="LhJ-MC-keY" id="OhU-wT-Pbf"/>
+                <outlet property="temperatureRangeContainerView" destination="XWK-d9-B2I" id="VMm-Hp-Iv9"/>
+                <outlet property="temperatureRangeLabel" destination="r1z-ek-bFb" id="Rwq-b5-U3b"/>
+                <outlet property="temperatureRangeSlider" destination="tp2-f2-Se2" id="lHW-Fq-dQa"/>
+                <outlet property="thermostatView" destination="mDc-mr-HcP" id="p5X-hn-Tkc"/>
+                <outlet property="titleLabel" destination="yaZ-92-3S1" id="jW6-nq-3Gi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ejz-3r-GPe">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDc-mr-HcP" customClass="CSThermostatRegulatorView">
+                    <rect key="frame" x="170" y="104" width="260" height="260"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="QxV-Wd-2B9"/>
+                        <constraint firstAttribute="width" constant="260" id="nzo-ny-osM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaZ-92-3S1">
+                    <rect key="frame" x="285" y="46" width="30" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="xwp-AW-qTQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="40"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity: --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-Hk-WQa">
+                    <rect key="frame" x="250" y="364" width="100" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="yHd-Uy-8hk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWK-d9-B2I">
+                    <rect key="frame" x="0.0" y="400" width="600" height="80"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-f2-Se2">
+                            <rect key="frame" x="183" y="50" width="234" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="AY7-HG-bRd"/>
+                                <constraint firstAttribute="height" constant="30" id="y0K-q9-GxK"/>
+                            </constraints>
+                            <color key="minimumTrackTintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.39717133620689654" colorSpace="calibratedRGB"/>
+                            <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="temperatureRangeSliderDidChanged" destination="-1" eventType="valueChanged" id="hTe-6T-YUY"/>
+                                <action selector="temperatureRangeSliderEditingDidEnd" destination="-1" eventType="touchUpOutside" id="Lfb-4p-QjR"/>
+                                <action selector="temperatureRangeSliderEditingDidEnd" destination="-1" eventType="touchUpInside" id="muV-OI-OGt"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature range: --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1z-ek-bFb">
+                            <rect key="frame" x="207" y="26" width="186" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="0bz-bY-s61"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tp2-f2-Se2" firstAttribute="centerX" secondItem="XWK-d9-B2I" secondAttribute="centerX" id="FxB-uP-lVv"/>
+                        <constraint firstAttribute="height" constant="80" id="HNx-k9-1ta"/>
+                        <constraint firstItem="tp2-f2-Se2" firstAttribute="top" secondItem="r1z-ek-bFb" secondAttribute="bottom" id="XIP-Kl-7BN"/>
+                        <constraint firstItem="r1z-ek-bFb" firstAttribute="centerX" secondItem="tp2-f2-Se2" secondAttribute="centerX" id="Zf0-Df-T18"/>
+                        <constraint firstAttribute="bottom" secondItem="tp2-f2-Se2" secondAttribute="bottom" id="a4Y-8P-gC0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhJ-MC-keY">
+                    <rect key="frame" x="84" y="547" width="90" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="8hK-Am-dp7"/>
+                        <constraint firstAttribute="height" constant="36" id="NdK-yb-bIc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                    <state key="normal" title="heat/cool"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlb-tJ-I54">
+                    <rect key="frame" x="24" y="553" width="60" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="kkp-WD-W6f"/>
+                        <constraint firstAttribute="width" constant="60" id="ris-Yv-wzj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ejz-3r-GPe" secondAttribute="trailing" id="8v1-zM-Hez"/>
+                <constraint firstItem="XWK-d9-B2I" firstAttribute="top" secondItem="LLQ-Hk-WQa" secondAttribute="bottom" constant="12" id="Bmw-lq-DNy"/>
+                <constraint firstItem="ejz-3r-GPe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HIn-Qa-X2P"/>
+                <constraint firstAttribute="bottom" secondItem="ejz-3r-GPe" secondAttribute="bottom" id="LPX-Lg-Dg7"/>
+                <constraint firstItem="ejz-3r-GPe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="La1-Qo-bWX"/>
+                <constraint firstItem="mDc-mr-HcP" firstAttribute="top" secondItem="yaZ-92-3S1" secondAttribute="bottom" constant="10" id="Mqc-fY-Ir2"/>
+                <constraint firstItem="wlb-tJ-I54" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="U8r-zq-L6h"/>
+                <constraint firstAttribute="trailing" secondItem="XWK-d9-B2I" secondAttribute="trailing" id="Y5J-zp-H9e"/>
+                <constraint firstItem="yaZ-92-3S1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aEn-I7-i3V"/>
+                <constraint firstItem="LLQ-Hk-WQa" firstAttribute="centerX" secondItem="yaZ-92-3S1" secondAttribute="centerX" id="bfN-6l-FkD"/>
+                <constraint firstItem="LLQ-Hk-WQa" firstAttribute="top" secondItem="mDc-mr-HcP" secondAttribute="bottom" id="hvv-nj-D9A"/>
+                <constraint firstItem="yaZ-92-3S1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="iMj-2a-Bq3"/>
+                <constraint firstAttribute="bottom" secondItem="wlb-tJ-I54" secondAttribute="bottom" constant="24" id="mHF-dU-lIa"/>
+                <constraint firstItem="XWK-d9-B2I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mJi-a0-Ys2"/>
+                <constraint firstItem="LhJ-MC-keY" firstAttribute="centerY" secondItem="wlb-tJ-I54" secondAttribute="centerY" id="mLE-9p-LmS"/>
+                <constraint firstItem="LhJ-MC-keY" firstAttribute="leading" secondItem="wlb-tJ-I54" secondAttribute="trailing" id="mdf-bl-9mO"/>
+                <constraint firstItem="mDc-mr-HcP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ynB-Hi-yj9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+    </resources>
+</document>

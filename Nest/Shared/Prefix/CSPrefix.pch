@@ -1,0 +1,19 @@
+//
+//  CSPrefix.pch
+//  Nest
+//
+//  Created by Denis Kapusta on 12/22/15.
+//  Copyright © 2015 Appko. All rights reserved.
+//
+
+#ifndef CSPrefix_pch
+#define CSPrefix_pch
+
+#ifdef __OBJC__
+
+#import "CSMacros.h"
+#import "CSAppConstants.h"
+
+#endif /* __OBJC__ */
+
+#endif /* CSPrefix_pch */

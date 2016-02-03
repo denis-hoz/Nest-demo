@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0F80971C4A42C000969F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80961C4A42C000969F7B /* main.m */; };
+		3B0F80A21C4A42C000969F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F80A11C4A42C000969F7B /* Assets.xcassets */; };
+		3B0F80A51C4A42C000969F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F80A31C4A42C000969F7B /* LaunchScreen.storyboard */; };
+		3B0F81AB1C4A435C00969F7B /* CSAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80AF1C4A435C00969F7B /* CSAppAssembly.m */; };
+		3B0F81AD1C4A435C00969F7B /* CSDefaultAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80B71C4A435C00969F7B /* CSDefaultAppConfiguration.m */; };
+		3B0F81AE1C4A435C00969F7B /* CSAppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80BA1C4A435C00969F7B /* CSAppConstants.m */; };
+		3B0F81AF1C4A435C00969F7B /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80BC1C4A435C00969F7B /* CSAppDelegate.m */; };
+		3B0F81B41C4A435C00969F7B /* CSCoreServicesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80CC1C4A435C00969F7B /* CSCoreServicesConfiguration.m */; };
+		3B0F81B91C4A435C00969F7B /* CSDefaultUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80DE1C4A435C00969F7B /* CSDefaultUserService.m */; };
+		3B0F81BA1C4A435C00969F7B /* UIAlertController+CSHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80E31C4A435C00969F7B /* UIAlertController+CSHelpers.m */; };
+		3B0F81BC1C4A435C00969F7B /* CSErrorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80EB1C4A435C00969F7B /* CSErrorViewModel.m */; };
+		3B0F81BE1C4A435C00969F7B /* CSBaseCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F80F11C4A435C00969F7B /* CSBaseCustomView.m */; };
+		3B0F82011C4A6BE200969F7B /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F81FF1C4A6BE200969F7B /* CSLoginViewController.m */; };
+		3B0F82021C4A6BE200969F7B /* CSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F82001C4A6BE200969F7B /* CSLoginViewController.xib */; };
+		3B845BF41C524E3E00455F95 /* CSThermostatConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B845BF31C524E3E00455F95 /* CSThermostatConstants.m */; };
+		3B9EAA361C4D269700D429FC /* CSThermostatRegulatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EAA351C4D269700D429FC /* CSThermostatRegulatorView.m */; };
+		3B9EAA381C4D26A800D429FC /* CSThermostatRegulatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EAA371C4D26A800D429FC /* CSThermostatRegulatorView.xib */; };
+		5B0C134497F2BD3FF4FED235 /* CSFadeInAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C14CA8EFF8FEA06A7840B /* CSFadeInAnimator.m */; };
+		5B0C171CC1FE3CB45DDB77A1 /* CSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C19716BC50339182F118E /* CSNavigationController.m */; };
+		5B0C1789D91BFD48ABD250DE /* CSThermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C1580A91672B62D3E97DF /* CSThermostat.m */; };
+		5B0C1907510EAAC83D8B709C /* CSURLSessionRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C1158E3048939A7692438 /* CSURLSessionRESTClient.m */; };
+		5B0C1E3D7C848E1A9644134D /* CSAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C1C5C77101B31D1D1E04B /* CSAccessToken.m */; };
+		C822005899C22B00DE5B7A94 /* CSLoginModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220AD2DC65FF2724D3DDA4 /* CSLoginModuleBuilder.m */; };
+		C822007F74307292E383F615 /* CSDefaultLoginViewModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220E2182BDE49696BAE30B /* CSDefaultLoginViewModelBuilder.m */; };
+		C82200AC90284289B525EB18 /* CSThermostatFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220CD4BAA4D0F133587135 /* CSThermostatFormatter.m */; };
+		C82200B68BBFFFFDEF6BF359 /* CSThermostatModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220037680FD0F6FD2FC3E5 /* CSThermostatModuleBuilder.m */; };
+		C822019EEE0C32BB36A5ED9F /* CSThermostatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C82205208F7E9FDADF0A3C63 /* CSThermostatViewController.xib */; };
+		C822026F6945AB4EE525E6C0 /* CSThermostatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220BEF4A4E71BC2DF99392 /* CSThermostatViewController.m */; };
+		C82202C1825090D5E1B5018F /* CSFirebasePathPatterns.m in Sources */ = {isa = PBXBuildFile; fileRef = C82206500103D93E7FA8891D /* CSFirebasePathPatterns.m */; };
+		C822038A4043A8C31DF815E4 /* CSDefaultThermostatPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C822056501DA70D4EF2D9B02 /* CSDefaultThermostatPresenter.m */; };
+		C82205F1D65ACAEC9470D378 /* CSDefaultLoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220F2A641C1B2B6A1879E5 /* CSDefaultLoginInteractor.m */; };
+		C822060E67521B193F3F83BA /* CSDefaultThermostatInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220E4320B1AB22562C1C65 /* CSDefaultThermostatInteractor.m */; };
+		C82207E8B28EB8F803B17F8D /* CSDefaultNestAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = C822096425192710C435F3E6 /* CSDefaultNestAuthService.m */; };
+		C8220892DCFC33C9245C9B6B /* CSNestStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = C822087ACC76EF3D57A5008C /* CSNestStructure.m */; };
+		C82208C506E879326294D298 /* CSDefaultLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C82200E69C0A3D59A73DEF6D /* CSDefaultLoginPresenter.m */; };
+		C822095C568CCA236FDB78CA /* CSThermostatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C82208D9934EA49569271AF1 /* CSThermostatViewModel.m */; };
+		C82209A64594DCD08D2AEE25 /* CSNestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220D6ABE64622B924ECA49 /* CSNestConfiguration.m */; };
+		C8220AB847BC277839412F0E /* CSDefaultThermostatService.m in Sources */ = {isa = PBXBuildFile; fileRef = C822035D70231BC09FB17722 /* CSDefaultThermostatService.m */; };
+		C8220B2E2CAA6F717CBCFB02 /* CSArcSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82208DA764F1A2C392D10D2 /* CSArcSliderView.m */; };
+		C8220BAF129728A2809EFEF1 /* CSDefaultNestStructureService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220FD713E09246972153DB /* CSDefaultNestStructureService.m */; };
+		C8220D6ADC192A01C5608424 /* CSDefaultFirebaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220CD626B953865015038C /* CSDefaultFirebaseService.m */; };
+		C8220E22DBB508D6FA2B59BA /* CSDefaultThermostatViewModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C82202B647386564DE3A2C5E /* CSDefaultThermostatViewModelBuilder.m */; };
+		C8220E5D6E8779DC59CEE8F9 /* CSNestConfigurationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220D22CFBD76258D064997 /* CSNestConfigurationConstants.m */; };
+		C8220FF089AAB489CD3949BD /* CSDefaultLoginWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = C8220A8E57EF5AADE6E5AB42 /* CSDefaultLoginWireframe.m */; };
+		FF72226048E509330602A969 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2169B8DF13F4736BD549595 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B0F80921C4A42C000969F7B /* Nest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0F80961C4A42C000969F7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B0F80A11C4A42C000969F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B0F80A41C4A42C000969F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B0F80A61C4A42C000969F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0F80AE1C4A435C00969F7B /* CSAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAppAssembly.h; sourceTree = "<group>"; };
+		3B0F80AF1C4A435C00969F7B /* CSAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAppAssembly.m; sourceTree = "<group>"; };
+		3B0F80B41C4A435C00969F7B /* CSAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAppConfiguration.h; sourceTree = "<group>"; };
+		3B0F80B61C4A435C00969F7B /* CSDefaultAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultAppConfiguration.h; sourceTree = "<group>"; };
+		3B0F80B71C4A435C00969F7B /* CSDefaultAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultAppConfiguration.m; sourceTree = "<group>"; };
+		3B0F80B91C4A435C00969F7B /* CSAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAppConstants.h; sourceTree = "<group>"; };
+		3B0F80BA1C4A435C00969F7B /* CSAppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAppConstants.m; sourceTree = "<group>"; };
+		3B0F80BB1C4A435C00969F7B /* CSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		3B0F80BC1C4A435C00969F7B /* CSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		3B0F80CB1C4A435C00969F7B /* CSCoreServicesConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCoreServicesConfiguration.h; sourceTree = "<group>"; };
+		3B0F80CC1C4A435C00969F7B /* CSCoreServicesConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCoreServicesConfiguration.m; sourceTree = "<group>"; };
+		3B0F80DD1C4A435C00969F7B /* CSDefaultUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultUserService.h; sourceTree = "<group>"; };
+		3B0F80DE1C4A435C00969F7B /* CSDefaultUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultUserService.m; sourceTree = "<group>"; };
+		3B0F80DF1C4A435C00969F7B /* CSUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUserService.h; sourceTree = "<group>"; };
+		3B0F80E21C4A435C00969F7B /* UIAlertController+CSHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CSHelpers.h"; sourceTree = "<group>"; };
+		3B0F80E31C4A435C00969F7B /* UIAlertController+CSHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CSHelpers.m"; sourceTree = "<group>"; };
+		3B0F80E71C4A435C00969F7B /* CSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMacros.h; sourceTree = "<group>"; };
+		3B0F80E81C4A435C00969F7B /* CSPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPrefix.pch; sourceTree = "<group>"; };
+		3B0F80EA1C4A435C00969F7B /* CSErrorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSErrorViewModel.h; sourceTree = "<group>"; };
+		3B0F80EB1C4A435C00969F7B /* CSErrorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSErrorViewModel.m; sourceTree = "<group>"; };
+		3B0F80F01C4A435C00969F7B /* CSBaseCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseCustomView.h; sourceTree = "<group>"; };
+		3B0F80F11C4A435C00969F7B /* CSBaseCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseCustomView.m; sourceTree = "<group>"; };
+		3B0F81FE1C4A6BE200969F7B /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginViewController.h; sourceTree = "<group>"; };
+		3B0F81FF1C4A6BE200969F7B /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginViewController.m; sourceTree = "<group>"; };
+		3B0F82001C4A6BE200969F7B /* CSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLoginViewController.xib; sourceTree = "<group>"; };
+		3B845BF21C524E3E00455F95 /* CSThermostatConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatConstants.h; sourceTree = "<group>"; };
+		3B845BF31C524E3E00455F95 /* CSThermostatConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostatConstants.m; sourceTree = "<group>"; };
+		3B9EAA341C4D269700D429FC /* CSThermostatRegulatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatRegulatorView.h; sourceTree = "<group>"; };
+		3B9EAA351C4D269700D429FC /* CSThermostatRegulatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostatRegulatorView.m; sourceTree = "<group>"; };
+		3B9EAA371C4D26A800D429FC /* CSThermostatRegulatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSThermostatRegulatorView.xib; sourceTree = "<group>"; };
+		41A736B6F1B7D46CC6491EA7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5846D4A9E163016ECC626BFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0C100E759D88988F452F07 /* CSFirebaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFirebaseService.h; sourceTree = "<group>"; };
+		5B0C108F116A8683BCAA0F01 /* CSThermostat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostat.h; sourceTree = "<group>"; };
+		5B0C1158E3048939A7692438 /* CSURLSessionRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSURLSessionRESTClient.m; sourceTree = "<group>"; };
+		5B0C117034B1E751A8DC31C1 /* CSURLSessionRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSURLSessionRESTClient.h; sourceTree = "<group>"; };
+		5B0C117E44C6D89125E7E013 /* CSRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRESTClient.h; sourceTree = "<group>"; };
+		5B0C11E8CAE61538FED0A91D /* CSFadeInAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFadeInAnimator.h; sourceTree = "<group>"; };
+		5B0C14CA8EFF8FEA06A7840B /* CSFadeInAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFadeInAnimator.m; sourceTree = "<group>"; };
+		5B0C1580A91672B62D3E97DF /* CSThermostat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostat.m; sourceTree = "<group>"; };
+		5B0C19716BC50339182F118E /* CSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNavigationController.m; sourceTree = "<group>"; };
+		5B0C1997638DB8913E686AD9 /* CSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNavigationController.h; sourceTree = "<group>"; };
+		5B0C1A747134735337B8C696 /* CSAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAccessToken.h; sourceTree = "<group>"; };
+		5B0C1C5C77101B31D1D1E04B /* CSAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAccessToken.m; sourceTree = "<group>"; };
+		C8220037680FD0F6FD2FC3E5 /* CSThermostatModuleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostatModuleBuilder.m; sourceTree = "<group>"; };
+		C82200E69C0A3D59A73DEF6D /* CSDefaultLoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultLoginPresenter.m; sourceTree = "<group>"; };
+		C8220132CDD52E9C92D7378F /* CSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLoginView.h; path = ../View/CSLoginView.h; sourceTree = "<group>"; };
+		C82201C3DEDC9EBFABE18958 /* CSDefaultThermostatInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultThermostatInteractor.h; sourceTree = "<group>"; };
+		C8220258518AD707A1C9698C /* CSDefaultThermostatViewModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultThermostatViewModelBuilder.h; sourceTree = "<group>"; };
+		C82202B647386564DE3A2C5E /* CSDefaultThermostatViewModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultThermostatViewModelBuilder.m; sourceTree = "<group>"; };
+		C82203009178A5FC753D0105 /* CSThermostatInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatInteractor.h; sourceTree = "<group>"; };
+		C822035D70231BC09FB17722 /* CSDefaultThermostatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultThermostatService.m; sourceTree = "<group>"; };
+		C82203FA38CB2407CA94EFD2 /* CSLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginPresenter.h; sourceTree = "<group>"; };
+		C82204177B7BE4C14A99590F /* CSDefaultThermostatPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultThermostatPresenter.h; sourceTree = "<group>"; };
+		C8220471A65CC88F27739449 /* CSArcSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSArcSliderView.h; sourceTree = "<group>"; };
+		C822051B879D05B375F3FD7A /* CSDefaultNestAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultNestAuthService.h; sourceTree = "<group>"; };
+		C82205208F7E9FDADF0A3C63 /* CSThermostatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSThermostatViewController.xib; sourceTree = "<group>"; };
+		C822056501DA70D4EF2D9B02 /* CSDefaultThermostatPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultThermostatPresenter.m; sourceTree = "<group>"; };
+		C822061862961C397E89F95A /* CSNestStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNestStructure.h; sourceTree = "<group>"; };
+		C82206500103D93E7FA8891D /* CSFirebasePathPatterns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFirebasePathPatterns.m; sourceTree = "<group>"; };
+		C822066270BA2C725CAFA0C2 /* CSDefaultLoginViewModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultLoginViewModelBuilder.h; sourceTree = "<group>"; };
+		C822066EF9D08D43FA1AA630 /* CSDefaultLoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultLoginInteractor.h; sourceTree = "<group>"; };
+		C822069061A5DC725835C519 /* CSDefaultNestStructureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultNestStructureService.h; sourceTree = "<group>"; };
+		C82206E93C3BB4E42AB348C6 /* CSLoginViewModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginViewModelBuilder.h; sourceTree = "<group>"; };
+		C822076E128D14BDA7DF84B1 /* CSLoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginInteractor.h; sourceTree = "<group>"; };
+		C82207912D87D2888A58DFED /* CSDefaultFirebaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultFirebaseService.h; sourceTree = "<group>"; };
+		C8220796B72B0731DDB329DB /* CSLoginModuleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginModuleBuilder.h; sourceTree = "<group>"; };
+		C822086ED3BA728550928DFF /* CSNestConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNestConfiguration.h; sourceTree = "<group>"; };
+		C822087ACC76EF3D57A5008C /* CSNestStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNestStructure.m; sourceTree = "<group>"; };
+		C82208BA431FE161E0A18D0A /* CSFirebasePathPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFirebasePathPatterns.h; sourceTree = "<group>"; };
+		C82208D9934EA49569271AF1 /* CSThermostatViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSThermostatViewModel.m; path = ../CSThermostatViewModel.m; sourceTree = "<group>"; };
+		C82208DA764F1A2C392D10D2 /* CSArcSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSArcSliderView.m; sourceTree = "<group>"; };
+		C822096425192710C435F3E6 /* CSDefaultNestAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultNestAuthService.m; sourceTree = "<group>"; };
+		C8220980A703E07F53BED54A /* CSThermostatFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatFormatter.h; sourceTree = "<group>"; };
+		C82209EB3EFA43458467CBBB /* CSLoginWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLoginWireframe.h; path = ../Interactor/CSLoginWireframe.h; sourceTree = "<group>"; };
+		C8220A8E57EF5AADE6E5AB42 /* CSDefaultLoginWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultLoginWireframe.m; sourceTree = "<group>"; };
+		C8220AD2DC65FF2724D3DDA4 /* CSLoginModuleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginModuleBuilder.m; sourceTree = "<group>"; };
+		C8220AE3F6A014A0EB613494 /* CSThermostatModuleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatModuleBuilder.h; sourceTree = "<group>"; };
+		C8220BC9C471ECC2011C92DA /* CSNestAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNestAuthService.h; sourceTree = "<group>"; };
+		C8220BEF4A4E71BC2DF99392 /* CSThermostatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostatViewController.m; sourceTree = "<group>"; };
+		C8220C48CD77AD91A12A09CB /* CSDefaultThermostatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultThermostatService.h; sourceTree = "<group>"; };
+		C8220C7A1F65D52838B4F86E /* CSThermostatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatView.h; sourceTree = "<group>"; };
+		C8220CC809D76DC37B3784AE /* CSThermostatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatViewController.h; sourceTree = "<group>"; };
+		C8220CD4BAA4D0F133587135 /* CSThermostatFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSThermostatFormatter.m; sourceTree = "<group>"; };
+		C8220CD626B953865015038C /* CSDefaultFirebaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultFirebaseService.m; sourceTree = "<group>"; };
+		C8220D22CFBD76258D064997 /* CSNestConfigurationConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNestConfigurationConstants.m; sourceTree = "<group>"; };
+		C8220D581E9425DE1FA2A86B /* CSThermostatViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatViewModel.h; sourceTree = "<group>"; };
+		C8220D6ABE64622B924ECA49 /* CSNestConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNestConfiguration.m; sourceTree = "<group>"; };
+		C8220D7A18CBFCBA70540955 /* CSThermostatViewModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatViewModelBuilder.h; sourceTree = "<group>"; };
+		C8220D992372FC590082317A /* CSNestStructureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNestStructureService.h; sourceTree = "<group>"; };
+		C8220E2182BDE49696BAE30B /* CSDefaultLoginViewModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultLoginViewModelBuilder.m; sourceTree = "<group>"; };
+		C8220E4320B1AB22562C1C65 /* CSDefaultThermostatInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultThermostatInteractor.m; sourceTree = "<group>"; };
+		C8220E4CE68FC0EF20577A22 /* CSDefaultLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultLoginPresenter.h; sourceTree = "<group>"; };
+		C8220EC1EC90CEC3071F1F28 /* CSNestConfigurationConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNestConfigurationConstants.h; sourceTree = "<group>"; };
+		C8220ED88DD184A79702C968 /* CSThermostatPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatPresenter.h; sourceTree = "<group>"; };
+		C8220EFED28A74A38570EC3E /* CSThermostatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSThermostatService.h; sourceTree = "<group>"; };
+		C8220F2A641C1B2B6A1879E5 /* CSDefaultLoginInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultLoginInteractor.m; sourceTree = "<group>"; };
+		C8220F9180ACD93D06A5BE9A /* CSDefaultLoginWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDefaultLoginWireframe.h; sourceTree = "<group>"; };
+		C8220FD713E09246972153DB /* CSDefaultNestStructureService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDefaultNestStructureService.m; sourceTree = "<group>"; };
+		D2169B8DF13F4736BD549595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B0F808F1C4A42C000969F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF72226048E509330602A969 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0F80891C4A42C000969F7B = {
+			isa = PBXGroup;
+			children = (
+				3B0F80941C4A42C000969F7B /* Nest */,
+				3B0F80931C4A42C000969F7B /* Products */,
+				BA13445892A0183C72287DC8 /* Pods */,
+				5D9E276A3F60B12E0DA1AF5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B0F80931C4A42C000969F7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80921C4A42C000969F7B /* Nest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B0F80941C4A42C000969F7B /* Nest */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80AC1C4A435C00969F7B /* App */,
+				3B0F80BD1C4A435C00969F7B /* Entities */,
+				3B0F80C91C4A435C00969F7B /* Services */,
+				3B0F80E01C4A435C00969F7B /* Shared */,
+				3B0F81031C4A435C00969F7B /* UseCases */,
+				3B0F80A11C4A42C000969F7B /* Assets.xcassets */,
+				3B0F80A31C4A42C000969F7B /* LaunchScreen.storyboard */,
+				3B0F80A61C4A42C000969F7B /* Info.plist */,
+				3B0F80951C4A42C000969F7B /* Supporting Files */,
+			);
+			path = Nest;
+			sourceTree = "<group>";
+		};
+		3B0F80951C4A42C000969F7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80961C4A42C000969F7B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B0F80AC1C4A435C00969F7B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80AD1C4A435C00969F7B /* Assembly */,
+				3B0F80B01C4A435C00969F7B /* Configuration */,
+				3B0F80B81C4A435C00969F7B /* Constants */,
+				3B0F80BB1C4A435C00969F7B /* CSAppDelegate.h */,
+				3B0F80BC1C4A435C00969F7B /* CSAppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B0F80AD1C4A435C00969F7B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80AE1C4A435C00969F7B /* CSAppAssembly.h */,
+				3B0F80AF1C4A435C00969F7B /* CSAppAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3B0F80B01C4A435C00969F7B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80B41C4A435C00969F7B /* CSAppConfiguration.h */,
+				3B0F80B61C4A435C00969F7B /* CSDefaultAppConfiguration.h */,
+				3B0F80B71C4A435C00969F7B /* CSDefaultAppConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3B0F80B81C4A435C00969F7B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80B91C4A435C00969F7B /* CSAppConstants.h */,
+				3B0F80BA1C4A435C00969F7B /* CSAppConstants.m */,
+				C8220EC1EC90CEC3071F1F28 /* CSNestConfigurationConstants.h */,
+				C8220D22CFBD76258D064997 /* CSNestConfigurationConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3B0F80BD1C4A435C00969F7B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C8220E718D989B44290C22B7 /* NestConfiguration */,
+				5B0C1769DF85FF907865F42B /* AccessToken */,
+				5B0C1CAFB863870F18B1E0DD /* Thermostat */,
+				C8220ADD2308D34D8784070C /* NestStructure */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3B0F80C91C4A435C00969F7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80CA1C4A435C00969F7B /* Configuration */,
+				3B0F80DC1C4A435C00969F7B /* User */,
+				C8220176902C002946519524 /* NestAuth */,
+				5B0C1967159AE711FF7C9AE9 /* RESTClient */,
+				5B0C14C7D6F6380F2157ACF6 /* Firebase */,
+				C8220DEB492CA343CA09DF2A /* Thermostat */,
+				C82203783B8BA75C126213E5 /* NestStructure */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B0F80CA1C4A435C00969F7B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80CB1C4A435C00969F7B /* CSCoreServicesConfiguration.h */,
+				3B0F80CC1C4A435C00969F7B /* CSCoreServicesConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3B0F80DC1C4A435C00969F7B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80DD1C4A435C00969F7B /* CSDefaultUserService.h */,
+				3B0F80DE1C4A435C00969F7B /* CSDefaultUserService.m */,
+				3B0F80DF1C4A435C00969F7B /* CSUserService.h */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		3B0F80E01C4A435C00969F7B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80E11C4A435C00969F7B /* Extensions */,
+				3B0F80E61C4A435C00969F7B /* Prefix */,
+				3B0F80E91C4A435C00969F7B /* ViewModels */,
+				3B0F80EE1C4A435C00969F7B /* Views */,
+				C8220841562CCC5923E1E7C4 /* Formatters */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3B0F80E11C4A435C00969F7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80E21C4A435C00969F7B /* UIAlertController+CSHelpers.h */,
+				3B0F80E31C4A435C00969F7B /* UIAlertController+CSHelpers.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B0F80E61C4A435C00969F7B /* Prefix */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80E71C4A435C00969F7B /* CSMacros.h */,
+				3B0F80E81C4A435C00969F7B /* CSPrefix.pch */,
+			);
+			path = Prefix;
+			sourceTree = "<group>";
+		};
+		3B0F80E91C4A435C00969F7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80EA1C4A435C00969F7B /* CSErrorViewModel.h */,
+				3B0F80EB1C4A435C00969F7B /* CSErrorViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B0F80EE1C4A435C00969F7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80EF1C4A435C00969F7B /* Base */,
+				5B0C1A3036F8E759E277CF9F /* NavigationController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B0F80EF1C4A435C00969F7B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F80F01C4A435C00969F7B /* CSBaseCustomView.h */,
+				3B0F80F11C4A435C00969F7B /* CSBaseCustomView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3B0F81031C4A435C00969F7B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C82208395B5A354645B5E296 /* Login */,
+				C82209227A2AB58BED2B18BB /* Thermostat */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3B0F81F81C4A48D500969F7B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				C8220AE3F6A014A0EB613494 /* CSThermostatModuleBuilder.h */,
+				C8220037680FD0F6FD2FC3E5 /* CSThermostatModuleBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		3B0F81F91C4A48D500969F7B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F81FA1C4A48D500969F7B /* Interactor */,
+				3B0F81FB1C4A48D500969F7B /* Presenter */,
+				3B0F81FC1C4A48D500969F7B /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3B0F81FA1C4A48D500969F7B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C82203009178A5FC753D0105 /* CSThermostatInteractor.h */,
+				C8220E4320B1AB22562C1C65 /* CSDefaultThermostatInteractor.m */,
+				C82201C3DEDC9EBFABE18958 /* CSDefaultThermostatInteractor.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3B0F81FB1C4A48D500969F7B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C8220EB7B61392721D7ABE97 /* ViewModels */,
+				C82205E8AC138E4C33D0A0C4 /* ViewModelBuilders */,
+				C8220ED88DD184A79702C968 /* CSThermostatPresenter.h */,
+				C82204177B7BE4C14A99590F /* CSDefaultThermostatPresenter.h */,
+				C822056501DA70D4EF2D9B02 /* CSDefaultThermostatPresenter.m */,
+				C8220C7A1F65D52838B4F86E /* CSThermostatView.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3B0F81FC1C4A48D500969F7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8220C623AECB098FCD8B1CD /* Thermostat */,
+				C8220CC809D76DC37B3784AE /* CSThermostatViewController.h */,
+				C8220BEF4A4E71BC2DF99392 /* CSThermostatViewController.m */,
+				C82205208F7E9FDADF0A3C63 /* CSThermostatViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B0C14C7D6F6380F2157ACF6 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				C8220D6B401FDBFFEE481D1E /* NestPathPatterns */,
+				5B0C100E759D88988F452F07 /* CSFirebaseService.h */,
+				C82207912D87D2888A58DFED /* CSDefaultFirebaseService.h */,
+				C8220CD626B953865015038C /* CSDefaultFirebaseService.m */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		5B0C1769DF85FF907865F42B /* AccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C1A747134735337B8C696 /* CSAccessToken.h */,
+				5B0C1C5C77101B31D1D1E04B /* CSAccessToken.m */,
+			);
+			path = AccessToken;
+			sourceTree = "<group>";
+		};
+		5B0C1967159AE711FF7C9AE9 /* RESTClient */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C117E44C6D89125E7E013 /* CSRESTClient.h */,
+				5B0C117034B1E751A8DC31C1 /* CSURLSessionRESTClient.h */,
+				5B0C1158E3048939A7692438 /* CSURLSessionRESTClient.m */,
+			);
+			path = RESTClient;
+			sourceTree = "<group>";
+		};
+		5B0C1A3036F8E759E277CF9F /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C1997638DB8913E686AD9 /* CSNavigationController.h */,
+				5B0C19716BC50339182F118E /* CSNavigationController.m */,
+				5B0C11E8CAE61538FED0A91D /* CSFadeInAnimator.h */,
+				5B0C14CA8EFF8FEA06A7840B /* CSFadeInAnimator.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		5B0C1CAFB863870F18B1E0DD /* Thermostat */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C108F116A8683BCAA0F01 /* CSThermostat.h */,
+				5B0C1580A91672B62D3E97DF /* CSThermostat.m */,
+				3B845BF21C524E3E00455F95 /* CSThermostatConstants.h */,
+				3B845BF31C524E3E00455F95 /* CSThermostatConstants.m */,
+			);
+			path = Thermostat;
+			sourceTree = "<group>";
+		};
+		5D9E276A3F60B12E0DA1AF5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2169B8DF13F4736BD549595 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA13445892A0183C72287DC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5846D4A9E163016ECC626BFB /* Pods.debug.xcconfig */,
+				41A736B6F1B7D46CC6491EA7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C822003634F0D4FE3B6A04F5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C822076E128D14BDA7DF84B1 /* CSLoginInteractor.h */,
+				C8220F2A641C1B2B6A1879E5 /* CSDefaultLoginInteractor.m */,
+				C822066EF9D08D43FA1AA630 /* CSDefaultLoginInteractor.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C8220100CCCAD11AD4A11327 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F81FE1C4A6BE200969F7B /* CSLoginViewController.h */,
+				3B0F81FF1C4A6BE200969F7B /* CSLoginViewController.m */,
+				3B0F82001C4A6BE200969F7B /* CSLoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8220176902C002946519524 /* NestAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C8220BC9C471ECC2011C92DA /* CSNestAuthService.h */,
+				C822051B879D05B375F3FD7A /* CSDefaultNestAuthService.h */,
+				C822096425192710C435F3E6 /* CSDefaultNestAuthService.m */,
+			);
+			path = NestAuth;
+			sourceTree = "<group>";
+		};
+		C822017C59B4073908ACA030 /* ViewModelBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				C82206E93C3BB4E42AB348C6 /* CSLoginViewModelBuilder.h */,
+				C8220E2182BDE49696BAE30B /* CSDefaultLoginViewModelBuilder.m */,
+				C822066270BA2C725CAFA0C2 /* CSDefaultLoginViewModelBuilder.h */,
+			);
+			path = ViewModelBuilders;
+			sourceTree = "<group>";
+		};
+		C8220295722F6EBF6E341A8A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				C8220F9180ACD93D06A5BE9A /* CSDefaultLoginWireframe.h */,
+				C8220A8E57EF5AADE6E5AB42 /* CSDefaultLoginWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		C82203783B8BA75C126213E5 /* NestStructure */ = {
+			isa = PBXGroup;
+			children = (
+				C8220D992372FC590082317A /* CSNestStructureService.h */,
+				C8220FD713E09246972153DB /* CSDefaultNestStructureService.m */,
+				C822069061A5DC725835C519 /* CSDefaultNestStructureService.h */,
+			);
+			path = NestStructure;
+			sourceTree = "<group>";
+		};
+		C822059EBD9F549EAC32EB1C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				C8220796B72B0731DDB329DB /* CSLoginModuleBuilder.h */,
+				C8220AD2DC65FF2724D3DDA4 /* CSLoginModuleBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		C82205E8AC138E4C33D0A0C4 /* ViewModelBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				C8220D7A18CBFCBA70540955 /* CSThermostatViewModelBuilder.h */,
+				C82202B647386564DE3A2C5E /* CSDefaultThermostatViewModelBuilder.m */,
+				C8220258518AD707A1C9698C /* CSDefaultThermostatViewModelBuilder.h */,
+			);
+			path = ViewModelBuilders;
+			sourceTree = "<group>";
+		};
+		C82208395B5A354645B5E296 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C822059EBD9F549EAC32EB1C /* Builder */,
+				C8220DE13EBAC92C49823AAB /* Core */,
+				C8220295722F6EBF6E341A8A /* Wireframe */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C8220841562CCC5923E1E7C4 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				C8220CD4BAA4D0F133587135 /* CSThermostatFormatter.m */,
+				C8220980A703E07F53BED54A /* CSThermostatFormatter.h */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		C82209227A2AB58BED2B18BB /* Thermostat */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F81F81C4A48D500969F7B /* Builder */,
+				3B0F81F91C4A48D500969F7B /* Core */,
+			);
+			path = Thermostat;
+			sourceTree = "<group>";
+		};
+		C8220ADD2308D34D8784070C /* NestStructure */ = {
+			isa = PBXGroup;
+			children = (
+				C822061862961C397E89F95A /* CSNestStructure.h */,
+				C822087ACC76EF3D57A5008C /* CSNestStructure.m */,
+			);
+			path = NestStructure;
+			sourceTree = "<group>";
+		};
+		C8220B78029C7F48FFA169BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C822017C59B4073908ACA030 /* ViewModelBuilders */,
+				C82203FA38CB2407CA94EFD2 /* CSLoginPresenter.h */,
+				C82200E69C0A3D59A73DEF6D /* CSDefaultLoginPresenter.m */,
+				C8220E4CE68FC0EF20577A22 /* CSDefaultLoginPresenter.h */,
+				C8220132CDD52E9C92D7378F /* CSLoginView.h */,
+				C82209EB3EFA43458467CBBB /* CSLoginWireframe.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C8220C623AECB098FCD8B1CD /* Thermostat */ = {
+			isa = PBXGroup;
+			children = (
+				3B9EAA341C4D269700D429FC /* CSThermostatRegulatorView.h */,
+				3B9EAA351C4D269700D429FC /* CSThermostatRegulatorView.m */,
+				3B9EAA371C4D26A800D429FC /* CSThermostatRegulatorView.xib */,
+				C8220471A65CC88F27739449 /* CSArcSliderView.h */,
+				C82208DA764F1A2C392D10D2 /* CSArcSliderView.m */,
+			);
+			path = Thermostat;
+			sourceTree = "<group>";
+		};
+		C8220D6B401FDBFFEE481D1E /* NestPathPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				C82208BA431FE161E0A18D0A /* CSFirebasePathPatterns.h */,
+				C82206500103D93E7FA8891D /* CSFirebasePathPatterns.m */,
+			);
+			path = NestPathPatterns;
+			sourceTree = "<group>";
+		};
+		C8220DE13EBAC92C49823AAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C822003634F0D4FE3B6A04F5 /* Interactor */,
+				C8220B78029C7F48FFA169BA /* Presenter */,
+				C8220100CCCAD11AD4A11327 /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C8220DEB492CA343CA09DF2A /* Thermostat */ = {
+			isa = PBXGroup;
+			children = (
+				C8220EFED28A74A38570EC3E /* CSThermostatService.h */,
+				C8220C48CD77AD91A12A09CB /* CSDefaultThermostatService.h */,
+				C822035D70231BC09FB17722 /* CSDefaultThermostatService.m */,
+			);
+			path = Thermostat;
+			sourceTree = "<group>";
+		};
+		C8220E718D989B44290C22B7 /* NestConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				C822086ED3BA728550928DFF /* CSNestConfiguration.h */,
+				C8220D6ABE64622B924ECA49 /* CSNestConfiguration.m */,
+			);
+			path = NestConfiguration;
+			sourceTree = "<group>";
+		};
+		C8220EB7B61392721D7ABE97 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8220D581E9425DE1FA2A86B /* CSThermostatViewModel.h */,
+				C82208D9934EA49569271AF1 /* CSThermostatViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B0F80911C4A42C000969F7B /* Nest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0F80A91C4A42C000969F7B /* Build configuration list for PBXNativeTarget "Nest" */;
+			buildPhases = (
+				BB7F2CFE684198439025467E /* Check Pods Manifest.lock */,
+				3B0F808E1C4A42C000969F7B /* Sources */,
+				3B0F808F1C4A42C000969F7B /* Frameworks */,
+				3B0F80901C4A42C000969F7B /* Resources */,
+				EA873481E6EB874DABC49A4E /* Embed Pods Frameworks */,
+				79F4C4FC1906792F96B7A007 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nest;
+			productName = Nest;
+			productReference = 3B0F80921C4A42C000969F7B /* Nest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B0F808A1C4A42C000969F7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Appko;
+				TargetAttributes = {
+					3B0F80911C4A42C000969F7B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 3B0F808D1C4A42C000969F7B /* Build configuration list for PBXProject "Nest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B0F80891C4A42C000969F7B;
+			productRefGroup = 3B0F80931C4A42C000969F7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B0F80911C4A42C000969F7B /* Nest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B0F80901C4A42C000969F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0F80A51C4A42C000969F7B /* LaunchScreen.storyboard in Resources */,
+				3B0F80A21C4A42C000969F7B /* Assets.xcassets in Resources */,
+				3B0F82021C4A6BE200969F7B /* CSLoginViewController.xib in Resources */,
+				3B9EAA381C4D26A800D429FC /* CSThermostatRegulatorView.xib in Resources */,
+				C822019EEE0C32BB36A5ED9F /* CSThermostatViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79F4C4FC1906792F96B7A007 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7F2CFE684198439025467E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA873481E6EB874DABC49A4E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B0F808E1C4A42C000969F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0F81AD1C4A435C00969F7B /* CSDefaultAppConfiguration.m in Sources */,
+				3B0F81BE1C4A435C00969F7B /* CSBaseCustomView.m in Sources */,
+				3B0F82011C4A6BE200969F7B /* CSLoginViewController.m in Sources */,
+				3B9EAA361C4D269700D429FC /* CSThermostatRegulatorView.m in Sources */,
+				3B0F81B41C4A435C00969F7B /* CSCoreServicesConfiguration.m in Sources */,
+				3B0F81BC1C4A435C00969F7B /* CSErrorViewModel.m in Sources */,
+				3B0F81AB1C4A435C00969F7B /* CSAppAssembly.m in Sources */,
+				3B0F81AF1C4A435C00969F7B /* CSAppDelegate.m in Sources */,
+				3B0F81AE1C4A435C00969F7B /* CSAppConstants.m in Sources */,
+				3B0F80971C4A42C000969F7B /* main.m in Sources */,
+				3B0F81B91C4A435C00969F7B /* CSDefaultUserService.m in Sources */,
+				3B0F81BA1C4A435C00969F7B /* UIAlertController+CSHelpers.m in Sources */,
+				C82205F1D65ACAEC9470D378 /* CSDefaultLoginInteractor.m in Sources */,
+				C82208C506E879326294D298 /* CSDefaultLoginPresenter.m in Sources */,
+				C8220FF089AAB489CD3949BD /* CSDefaultLoginWireframe.m in Sources */,
+				3B845BF41C524E3E00455F95 /* CSThermostatConstants.m in Sources */,
+				C82200B68BBFFFFDEF6BF359 /* CSThermostatModuleBuilder.m in Sources */,
+				C822005899C22B00DE5B7A94 /* CSLoginModuleBuilder.m in Sources */,
+				C822007F74307292E383F615 /* CSDefaultLoginViewModelBuilder.m in Sources */,
+				C82209A64594DCD08D2AEE25 /* CSNestConfiguration.m in Sources */,
+				C82207E8B28EB8F803B17F8D /* CSDefaultNestAuthService.m in Sources */,
+				C8220E5D6E8779DC59CEE8F9 /* CSNestConfigurationConstants.m in Sources */,
+				5B0C1E3D7C848E1A9644134D /* CSAccessToken.m in Sources */,
+				5B0C1907510EAAC83D8B709C /* CSURLSessionRESTClient.m in Sources */,
+				5B0C171CC1FE3CB45DDB77A1 /* CSNavigationController.m in Sources */,
+				5B0C134497F2BD3FF4FED235 /* CSFadeInAnimator.m in Sources */,
+				5B0C1789D91BFD48ABD250DE /* CSThermostat.m in Sources */,
+				C8220892DCFC33C9245C9B6B /* CSNestStructure.m in Sources */,
+				C82202C1825090D5E1B5018F /* CSFirebasePathPatterns.m in Sources */,
+				C822060E67521B193F3F83BA /* CSDefaultThermostatInteractor.m in Sources */,
+				C822038A4043A8C31DF815E4 /* CSDefaultThermostatPresenter.m in Sources */,
+				C8220AB847BC277839412F0E /* CSDefaultThermostatService.m in Sources */,
+				C8220BAF129728A2809EFEF1 /* CSDefaultNestStructureService.m in Sources */,
+				C8220D6ADC192A01C5608424 /* CSDefaultFirebaseService.m in Sources */,
+				C8220E22DBB508D6FA2B59BA /* CSDefaultThermostatViewModelBuilder.m in Sources */,
+				C8220B2E2CAA6F717CBCFB02 /* CSArcSliderView.m in Sources */,
+				C822026F6945AB4EE525E6C0 /* CSThermostatViewController.m in Sources */,
+				C822095C568CCA236FDB78CA /* CSThermostatViewModel.m in Sources */,
+				C82200AC90284289B525EB18 /* CSThermostatFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B0F80A31C4A42C000969F7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0F80A41C4A42C000969F7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B0F80A71C4A42C000969F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B0F80A81C4A42C000969F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B0F80AA1C4A42C000969F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5846D4A9E163016ECC626BFB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Nest/Shared/Prefix/CSPrefix.pch;
+				INFOPLIST_FILE = Nest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scnsoft.Nest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B0F80AB1C4A42C000969F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A736B6F1B7D46CC6491EA7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Nest/Shared/Prefix/CSPrefix.pch;
+				INFOPLIST_FILE = Nest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scnsoft.Nest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B0F808D1C4A42C000969F7B /* Build configuration list for PBXProject "Nest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0F80A71C4A42C000969F7B /* Debug */,
+				3B0F80A81C4A42C000969F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0F80A91C4A42C000969F7B /* Build configuration list for PBXNativeTarget "Nest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0F80AA1C4A42C000969F7B /* Debug */,
+				3B0F80AB1C4A42C000969F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B0F808A1C4A42C000969F7B /* Project object */;
+}
